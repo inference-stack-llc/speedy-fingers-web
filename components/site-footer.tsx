@@ -22,7 +22,7 @@ export function SiteFooter() {
           <div>
             <h2>Support</h2>
             <a href="/support">Help center</a>
-            <a href="mailto:support@speedyfingers.app">Contact</a>
+            <a href="mailto:support@speedyfingers.org">Contact</a>
           </div>
 
           <div>

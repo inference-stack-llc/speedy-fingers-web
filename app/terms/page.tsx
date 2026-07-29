@@ -108,8 +108,8 @@ export default function TermsPage() {
         <p>
           We may update these terms as the app grows. Material changes will be
           reflected here with a revised date. Questions can be sent to{" "}
-          <a href="mailto:support@speedyfingers.app">
-            support@speedyfingers.app
+          <a href="mailto:support@speedyfingers.org">
+            support@speedyfingers.org
           </a>
           .
         </p>

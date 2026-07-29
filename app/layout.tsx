@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const host =
     headerStore.get("x-forwarded-host") ??
     headerStore.get("host") ??
-    "speedyfingers.app";
+    "speedyfingers.org";
   const protocol =
     headerStore.get("x-forwarded-proto") ??
     (host.includes("localhost") ? "http" : "https");

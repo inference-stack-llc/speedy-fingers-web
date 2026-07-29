@@ -7,19 +7,17 @@ type BrandProps = {
 export function Brand({ compact = false }: BrandProps) {
   return (
     <Link
-      className="brand-lockup group"
+      className={`brand-lockup ${compact ? "brand-lockup--compact" : ""}`}
       href="/"
       aria-label="Speedy Fingers home"
     >
-      <span className="brand-mark" aria-hidden="true">
-        <span />
-        <span />
-        <span />
-      </span>
-      <span className="brand-copy">
-        <strong>SPEEDY</strong>
-        {!compact && <em>FINGERS</em>}
-      </span>
+      <img
+        className="brand-logo"
+        src="/speedyfingers-logo.png"
+        width="1086"
+        height="362"
+        alt="Speedy Fingers"
+      />
     </Link>
   );
 }

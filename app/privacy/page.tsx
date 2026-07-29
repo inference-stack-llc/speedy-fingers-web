@@ -98,8 +98,8 @@ export default function PrivacyPage() {
         <h2>Contact</h2>
         <p>
           Questions about this policy can be sent to{" "}
-          <a href="mailto:support@speedyfingers.app">
-            support@speedyfingers.app
+          <a href="mailto:support@speedyfingers.org">
+            support@speedyfingers.org
           </a>
           .
         </p>

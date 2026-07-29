@@ -119,69 +119,24 @@ summary {
   display: inline-flex;
   align-items: center;
   width: max-content;
-  gap: 0.7rem;
 }
 
-.brand-mark {
-  position: relative;
+.brand-logo {
   display: block;
-  width: 48px;
-  height: 34px;
-  filter: drop-shadow(0 0 12px rgba(49, 216, 207, 0.38));
-  transition: transform 240ms ease, filter 240ms ease;
+  width: 218px;
+  height: auto;
+  margin: -0.8rem -0.6rem -0.8rem -0.85rem;
+  filter: drop-shadow(0 0 12px rgba(49, 216, 207, 0.18));
+  transition: filter 240ms ease, transform 240ms ease;
 }
 
-.brand-mark span {
-  position: absolute;
-  left: 0;
-  display: block;
-  width: 46px;
-  height: 7px;
-  border-radius: 100% 0 100% 0;
-  background: linear-gradient(90deg, #0779ad 2%, #4ffff5 54%, #eefeff 100%);
-  clip-path: polygon(0 72%, 100% 0, 76% 100%, 10% 100%);
-  transform: skewX(-18deg);
-}
-
-.brand-mark span:nth-child(1) {
-  top: 0;
-}
-
-.brand-mark span:nth-child(2) {
-  top: 12px;
-  left: 4px;
-}
-
-.brand-mark span:nth-child(3) {
-  top: 24px;
-  left: 8px;
-}
-
-.brand-lockup:hover .brand-mark {
-  filter: drop-shadow(0 0 18px rgba(49, 216, 207, 0.62));
+.brand-lockup:hover .brand-logo {
+  filter: drop-shadow(0 0 18px rgba(49, 216, 207, 0.4));
   transform: translateX(2px);
 }
 
-.brand-copy {
-  display: grid;
-  line-height: 0.9;
-}
-
-.brand-copy strong {
-  color: white;
-  font-size: 1.17rem;
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: -0.045em;
-}
-
-.brand-copy em {
-  margin-top: 0.3rem;
-  color: var(--cyan-bright);
-  font-size: 0.76rem;
-  font-style: italic;
-  font-weight: 900;
-  letter-spacing: 0.28em;
+.brand-lockup--compact .brand-logo {
+  width: 174px;
 }
 
 .desktop-nav {
@@ -476,31 +431,22 @@ summary {
 .phone-shot {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 0.49;
-  border: 1px solid rgba(199, 233, 244, 0.31);
-  border-radius: clamp(28px, 7.2%, 54px);
-  background: #000;
-  box-shadow:
-    0 35px 80px rgba(0, 0, 0, 0.52),
-    0 0 0 3px rgba(5, 12, 19, 0.92),
-    0 0 0 4px rgba(206, 235, 241, 0.18),
-    0 0 42px rgba(35, 206, 211, 0.1);
+  aspect-ratio: 0.479;
+  border: 0;
+  border-radius: 9.4%;
+  background: transparent;
+  box-shadow: none;
 }
 
 .phone-shot::after {
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(118deg, rgba(255, 255, 255, 0.12), transparent 18%, transparent 75%, rgba(74, 246, 238, 0.05));
-  content: "";
-  pointer-events: none;
+  display: none;
 }
 
 .phone-shot img {
   position: absolute;
-  top: -7.2%;
+  top: -8.2%;
   left: 50%;
-  width: 122%;
+  width: 122.7%;
   max-width: none;
   height: auto;
   transform: translateX(-50%);
@@ -1465,18 +1411,9 @@ summary {
     min-height: 68px;
   }
 
-  .brand-mark {
-    width: 42px;
-    transform: scale(0.9);
-    transform-origin: left center;
-  }
-
-  .brand-copy strong {
-    font-size: 1rem;
-  }
-
-  .brand-copy em {
-    font-size: 0.66rem;
+  .brand-logo {
+    width: 190px;
+    margin-left: -0.75rem;
   }
 
   .hero {

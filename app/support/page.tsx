@@ -21,8 +21,8 @@ export default function SupportPage() {
         <p>
           For help, bug reports, accessibility feedback, or questions about the
           upcoming release, email{" "}
-          <a href="mailto:support@speedyfingers.app">
-            support@speedyfingers.app
+          <a href="mailto:support@speedyfingers.org">
+            support@speedyfingers.org
           </a>
           . Please include your iPhone model, iOS version, and a short
           description of what happened when that information is relevant.
