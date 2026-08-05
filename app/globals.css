@@ -40,7 +40,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at 50% -10%, rgba(20, 120, 153, 0.14), transparent 34rem),
+    radial-gradient(circle at 50% -10%, rgba(20, 155, 191, 0.22), transparent 38rem),
     var(--night);
   color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
@@ -53,10 +53,11 @@ body::before {
   z-index: 0;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(2, 8, 20, 0.22), rgba(2, 8, 20, 0.7) 66%, #020814),
+    linear-gradient(180deg, rgba(2, 8, 20, 0.06), rgba(2, 8, 20, 0.22) 62%, rgba(2, 8, 20, 0.48)),
     url("/speedyfingers-bg.svg") center top / cover no-repeat;
   content: "";
-  opacity: 0.52;
+  filter: saturate(1.28) contrast(1.08);
+  opacity: 0.82;
   pointer-events: none;
 }
 
@@ -566,12 +567,11 @@ summary {
   padding: 1.4rem;
   border: 1px solid var(--line-soft);
   border-radius: 20px;
-  background:
-    linear-gradient(145deg, rgba(9, 32, 55, 0.9), rgba(3, 14, 29, 0.9)),
-    var(--panel);
+  background: linear-gradient(145deg, rgba(9, 32, 55, 0.58), rgba(3, 14, 29, 0.42));
   box-shadow:
     inset 0 1px rgba(255, 255, 255, 0.04),
-    0 18px 60px rgba(0, 0, 0, 0.22);
+    0 18px 60px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
   transition:
     border-color 220ms ease,
     transform 220ms ease,
@@ -656,8 +656,9 @@ summary {
   padding: 1.7rem;
   border: 1px solid var(--line-soft);
   border-radius: 22px;
-  background: rgba(4, 19, 37, 0.74);
+  background: rgba(4, 19, 37, 0.48);
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px);
 }
 
 .step-card::after {
@@ -724,9 +725,7 @@ summary {
 
 .screens-section {
   overflow: hidden;
-  background:
-    linear-gradient(180deg, rgba(4, 18, 35, 0.2), rgba(4, 18, 35, 0.7) 36%, rgba(4, 18, 35, 0.26)),
-    radial-gradient(circle at 60% 44%, rgba(29, 185, 198, 0.12), transparent 34rem);
+  background: radial-gradient(circle at 60% 44%, rgba(29, 185, 198, 0.16), transparent 34rem);
 }
 
 .section-heading--split {
@@ -778,21 +777,32 @@ summary {
 }
 
 .growth-card {
+  position: relative;
   display: grid;
   min-height: 610px;
-  overflow: hidden;
+  overflow: visible;
+  isolation: isolate;
   grid-template-columns: minmax(0, 0.86fr) minmax(360px, 0.64fr);
   align-items: center;
-  padding: clamp(2rem, 6vw, 5rem);
-  border: 1px solid rgba(68, 231, 223, 0.25);
-  border-radius: 28px;
-  background:
-    linear-gradient(110deg, rgba(4, 19, 37, 0.98) 0%, rgba(5, 28, 50, 0.94) 52%, rgba(6, 48, 68, 0.7) 100%),
-    var(--panel);
-  box-shadow:
-    inset 0 1px rgba(255, 255, 255, 0.05),
-    0 30px 90px rgba(0, 0, 0, 0.36);
+  padding: clamp(1rem, 4vw, 3.5rem) 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   gap: 4rem;
+}
+
+.growth-card::before {
+  position: absolute;
+  z-index: -1;
+  right: -8%;
+  width: min(58vw, 680px);
+  height: min(58vw, 680px);
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(38, 192, 211, 0.13), transparent 66%);
+  content: "";
+  filter: blur(12px);
+  pointer-events: none;
 }
 
 .growth-copy {
@@ -969,16 +979,14 @@ summary {
   position: relative;
   display: flex;
   min-height: 280px;
-  overflow: hidden;
+  overflow: visible;
   align-items: center;
   justify-content: space-between;
-  padding: clamp(2rem, 6vw, 4.5rem);
-  border: 1px solid rgba(64, 235, 227, 0.28);
-  border-radius: 28px;
-  background:
-    linear-gradient(105deg, rgba(4, 19, 37, 0.98), rgba(5, 32, 54, 0.9)),
-    var(--panel);
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.34);
+  padding: clamp(2rem, 5vw, 4rem) 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   gap: 2rem;
 }
 
@@ -1004,8 +1012,8 @@ summary {
 }
 
 .site-footer {
-  border-top: 1px solid var(--line-soft);
-  background: rgba(1, 5, 13, 0.8);
+  border-top: 0;
+  background: linear-gradient(180deg, transparent, rgba(1, 5, 13, 0.62));
   padding: 4rem 0 1.5rem;
 }
 
@@ -1505,9 +1513,9 @@ summary {
   }
 
   .growth-card {
-    width: calc(100% - 1rem);
-    padding: 2rem 1.25rem;
-    border-radius: 22px;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0;
   }
 
   .growth-visual {
@@ -1526,8 +1534,8 @@ summary {
   }
 
   .launch-card {
-    padding: 2rem 1.25rem;
-    border-radius: 22px;
+    padding: 2rem 0;
+    border-radius: 0;
   }
 
   .launch-card .app-store-badge {
