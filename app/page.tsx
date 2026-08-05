@@ -106,11 +106,9 @@ export default function Home() {
                 A new ASL recognition game for iPhone
               </p>
               <h1>
-                Train your eyes.
-                <br />
-                Catch the sign.
-                <br />
-                <em>Build the streak.</em>
+                <span className="hero-line">Train your eyes.</span>
+                <span className="hero-line">Catch the sign.</span>
+                <em className="hero-line">Build the streak.</em>
               </h1>
               <p className="hero-lede">
                 Speedy Fingers turns ASL fingerspelling recognition into a

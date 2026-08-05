@@ -14,8 +14,8 @@ export function Brand({ compact = false }: BrandProps) {
       <img
         className="brand-logo"
         src="/speedyfingers-logo.png"
-        width="1086"
-        height="362"
+        width="2173"
+        height="724"
         alt="Speedy Fingers"
       />
     </Link>

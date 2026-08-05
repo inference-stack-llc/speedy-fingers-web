@@ -2,7 +2,6 @@ import assert from "node:assert/strict";
 import { access, readFile } from "node:fs/promises";
 import test from "node:test";
 
-const templateRoot = new URL("../", import.meta.url);
 const previewRoot = new URL("../app/_sites-preview/", import.meta.url);
 
 async function render(pathname = "/") {

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Brand } from "./brand";
 
 export function SiteFooter() {
@@ -14,21 +15,21 @@ export function SiteFooter() {
 
           <div>
             <h2>Explore</h2>
-            <a href="/#game">The game</a>
-            <a href="/#how-it-works">How it works</a>
-            <a href="/#screens">Screens</a>
+            <Link href="/#game">The game</Link>
+            <Link href="/#how-it-works">How it works</Link>
+            <Link href="/#screens">Screens</Link>
           </div>
 
           <div>
             <h2>Support</h2>
-            <a href="/support">Help center</a>
+            <Link href="/support">Help center</Link>
             <a href="mailto:support@speedyfingers.org">Contact</a>
           </div>
 
           <div>
             <h2>Legal</h2>
-            <a href="/privacy">Privacy policy</a>
-            <a href="/terms">Terms of use</a>
+            <Link href="/privacy">Privacy policy</Link>
+            <Link href="/terms">Terms of use</Link>
           </div>
         </div>
 
