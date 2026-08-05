@@ -801,7 +801,7 @@ summary {
   top: -1rem;
   right: -3rem;
   display: block;
-  width: min(500px, 43vw);
+  width: min(540px, 47vw);
   max-width: none;
   height: auto;
   filter:
@@ -1137,7 +1137,7 @@ summary {
 
   .growth-product-image {
     right: -3.5rem;
-    width: min(450px, 45vw);
+    width: min(520px, 50vw);
   }
 }
 
@@ -1381,6 +1381,8 @@ summary {
   }
 
   .growth-product-image {
+    top: auto;
+    bottom: -2rem;
     width: min(520px, 116vw);
   }
 
