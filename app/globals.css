@@ -441,7 +441,7 @@ summary {
   position: relative;
   z-index: 2;
   display: block;
-  width: min(780px, 58vw);
+  width: min(700px, 52vw);
   max-width: none;
   height: auto;
   filter:
@@ -1160,7 +1160,7 @@ summary {
   }
 
   .hero-product-image {
-    width: min(650px, 58vw);
+    width: min(620px, 56vw);
   }
 
   .feature-grid {
@@ -1289,7 +1289,7 @@ summary {
   }
 
   .hero-product-image {
-    width: min(760px, 100%);
+    width: min(690px, 96%);
   }
 
   .feature-band {
@@ -1385,7 +1385,7 @@ summary {
   }
 
   .hero-product-image {
-    width: min(660px, 116vw);
+    width: min(620px, 108vw);
   }
 
   .feature-grid {
