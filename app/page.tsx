@@ -5,32 +5,32 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 export const metadata: Metadata = {
-  title: "ASL Fingerspelling Recognition Game for iPhone",
+  title: "ASL Fingerspelling Game for iPhone",
   description:
-    "Build visual ASL fingerspelling recognition through fast rounds, a progressive journey, and focused A–Z practice. Speedy Fingers is coming soon to iPhone.",
+    "Learn the ASL alphabet, practice names and words, and challenge your fingerspelling recognition with fast rounds, streaks, and progressive levels.",
   alternates: { canonical: "/" },
 };
 
 const features = [
   {
     icon: "↯",
-    title: "Fast recognition",
-    copy: "Quick, focused rounds train you to spot familiar fingerspelled words without overthinking.",
+    title: "Learn A–Z",
+    copy: "Explore the complete ASL fingerspelling alphabet in Hand Lab, one clear handshape at a time.",
   },
   {
     icon: "⌁",
-    title: "A real journey",
-    copy: "Progress through worlds and levels that increase pace, length, and challenge as you improve.",
+    title: "Spell what matters",
+    copy: "Practice your name and familiar words at a pace that helps every letter stick.",
   },
   {
     icon: "✋",
-    title: "Hand Lab",
-    copy: "Study vetted A–Z handshapes at your own pace before putting recognition into motion.",
+    title: "Challenge your skills",
+    copy: "Already sign? Push your speed, accuracy, and streak across levels that get tougher as you improve.",
   },
   {
     icon: "◎",
-    title: "Made to adapt",
-    copy: "Tune playback, feedback, contrast, and decorative motion for a more comfortable session.",
+    title: "Play your way",
+    copy: "Choose your pace, session length, sound, feedback, and motion for a game that feels right.",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function Home() {
     applicationSubCategory: "EducationalGame",
     operatingSystem: "iOS",
     description:
-      "A fast, focused ASL fingerspelling recognition game for iPhone.",
+      "A fast, fun ASL fingerspelling game for learning the alphabet, practicing words, and challenging recognition skills.",
     offers: {
       "@type": "Offer",
       price: "0",
@@ -84,10 +84,10 @@ export default function Home() {
       availability: "https://schema.org/PreOrder",
     },
     featureList: [
-      "ASL fingerspelling recognition rounds",
-      "Progressive journey mode",
-      "A–Z Hand Lab",
-      "Adjustable playback and accessibility settings",
+      "Complete ASL fingerspelling alphabet in Hand Lab",
+      "Name and word fingerspelling practice",
+      "Progressive recognition challenges",
+      "Adjustable pace, feedback, and accessibility settings",
     ],
   };
 
@@ -108,17 +108,18 @@ export default function Home() {
             <div className="hero-copy">
               <p className="eyebrow">
                 <span />
-                A new ASL recognition game for iPhone
+                An ASL fingerspelling game for every skill level
               </p>
               <h1>
-                <span className="hero-line">Train your eyes.</span>
-                <span className="hero-line">Catch the sign.</span>
-                <em className="hero-line">Build the streak.</em>
+                <span className="hero-line">Learn the letters.</span>
+                <span className="hero-line">Catch the word.</span>
+                <em className="hero-line">Beat your best.</em>
               </h1>
               <p className="hero-lede">
-                Speedy Fingers turns ASL fingerspelling recognition into a
-                fast, focused game—learn the handshapes, read short words, and
-                sharpen visual fluency one round at a time.
+                Whether you’re learning ASL or already sign, Speedy Fingers
+                turns fingerspelling into a fast, replayable challenge.
+                Practice names and words, sharpen recognition, and chase your
+                next high score.
               </p>
 
               <div className="hero-actions">
@@ -175,10 +176,12 @@ export default function Home() {
         <section id="how-it-works" className="section">
           <div className="site-shell">
             <div className="section-heading reveal">
-              <p className="eyebrow">Built around recognition</p>
-              <h2>Read the rhythm.</h2>
+              <p className="eyebrow">An essential ASL skill</p>
+              <h2>Make fingerspelling click.</h2>
               <p>
-                Short sessions turn a simple loop into useful visual practice.
+                Fingerspelling is everywhere in ASL—and one of the hardest
+                skills to read at speed. Short rounds make practice feel like
+                play.
               </p>
             </div>
 
@@ -188,10 +191,10 @@ export default function Home() {
                 <div className="step-symbol" aria-hidden="true">
                   ◉
                 </div>
-                <h3>Watch the signs</h3>
+                <h3>Learn the alphabet</h3>
                 <p>
-                  A hand spells a short word. Focus on the shapes, transitions,
-                  and timing.
+                  Study every A–Z handshape in Hand Lab, then play the full
+                  sequence until the letters feel familiar.
                 </p>
               </article>
               <article className="step-card reveal">
@@ -201,8 +204,8 @@ export default function Home() {
                 </div>
                 <h3>Read the word</h3>
                 <p>
-                  Choose the word that matches what you saw, with replay support
-                  when the level allows it.
+                  Watch a name or word fingerspelled at your pace, then choose
+                  what you saw.
                 </p>
               </article>
               <article className="step-card reveal">
@@ -210,17 +213,18 @@ export default function Home() {
                 <div className="step-symbol" aria-hidden="true">
                   ↯
                 </div>
-                <h3>Build your streak</h3>
+                <h3>Challenge yourself</h3>
                 <p>
-                  Keep your accuracy up, complete the level, and open the next
-                  step in your journey.
+                  Build accuracy, chase streaks, and unlock tougher levels as
+                  your recognition gets faster.
                 </p>
               </article>
             </div>
 
             <p className="course-note reveal">
-              Speedy Fingers is a visual fingerspelling recognition game—not a
-              complete ASL course.
+              Speedy Fingers focuses on ASL fingerspelling—not the full
+              language. Pair it with broader ASL learning and Deaf-led
+              instruction.
             </p>
           </div>
         </section>
@@ -229,12 +233,12 @@ export default function Home() {
           <div className="site-shell">
             <div className="section-heading section-heading--split reveal">
               <div>
-                <p className="eyebrow">Inside the game</p>
-                <h2>Practice has a pulse.</h2>
+                <p className="eyebrow">Play. Practice. Progress.</p>
+                <h2>Fingerspelling that moves.</h2>
               </div>
               <p>
-                A clear, focused interface keeps every tap close to the thing
-                that matters: reading the next sign.
+                Learn the alphabet, spell your name, read words at speed, and
+                keep leveling up.
               </p>
             </div>
 
@@ -252,29 +256,29 @@ export default function Home() {
         <section className="section">
           <div className="site-shell growth-card reveal">
             <div className="growth-copy">
-              <p className="eyebrow">Start steady. Get fast.</p>
-              <h2>Practice that grows with you.</h2>
+              <p className="eyebrow">For first letters and fast hands</p>
+              <h2>Start where you are. Level up.</h2>
               <p>
-                Begin with generous timing, learn every handshape in Hand Lab,
-                then move through new worlds as your recognition becomes more
-                automatic.
+                Use Hand Lab to learn the full ASL alphabet, practice names and
+                words at your pace, then test your recognition in worlds that
+                get faster as you do.
               </p>
               <ul>
                 <li>
                   <span>✓</span>
-                  Vetted A–Z fingerspelling artwork
+                  Complete A–Z alphabet in Hand Lab
                 </li>
                 <li>
                   <span>✓</span>
-                  Category-based word training
+                  Practice your name and everyday words
                 </li>
                 <li>
                   <span>✓</span>
-                  Adjustable pace, feedback, and visuals
+                  Adjustable speed, sound, and feedback
                 </li>
                 <li>
                   <span>✓</span>
-                  Focused levels with clear progress
+                  Levels, streaks, scores, and progress
                 </li>
               </ul>
             </div>
@@ -299,8 +303,8 @@ export default function Home() {
               <p className="eyebrow">Good to know</p>
               <h2>Before the first round.</h2>
               <p>
-                Version 1 is built as a focused, free starting point—with room
-                for future worlds and features.
+                Built for learners, signers, and anyone who wants a fun way to
+                spend more time with ASL.
               </p>
               <a className="text-link" href="/support">
                 Visit support <span aria-hidden="true">→</span>
@@ -325,9 +329,9 @@ export default function Home() {
               <details>
                 <summary>Is this a complete ASL course?</summary>
                 <p>
-                  No. Speedy Fingers focuses specifically on visual recognition
-                  of ASL fingerspelling. It works best as one tool alongside
-                  broader ASL learning and Deaf-led resources.
+                  No. Speedy Fingers focuses on the ASL alphabet and
+                  fingerspelling recognition. It complements broader ASL study,
+                  community practice, and Deaf-led learning.
                 </p>
               </details>
             </div>
@@ -337,11 +341,11 @@ export default function Home() {
         <section className="launch-section">
           <div className="site-shell launch-card reveal">
             <div>
-              <p className="eyebrow">Launching on iPhone</p>
-              <h2>Ready when your eyes are.</h2>
+              <p className="eyebrow">Coming soon to iPhone</p>
+              <h2>Ready to spell faster?</h2>
               <p>
-                Learn the shapes. Catch the word. Chase a faster, cleaner
-                streak.
+                Learn the alphabet. Read the word. Chase the streak—and have
+                fun with ASL.
               </p>
             </div>
             <AppStoreBadge />

@@ -32,8 +32,9 @@ test("server-renders the Speedy Fingers marketing page", async () => {
 
   const html = await response.text();
   assert.match(html, /Speedy Fingers/);
-  assert.match(html, /Train your eyes/);
-  assert.match(html, /Build the streak/);
+  assert.match(html, /Learn the letters/);
+  assert.match(html, /Beat your best/);
+  assert.match(html, /learning ASL or already sign/);
   assert.match(html, /Coming soon to the/);
   assert.match(html, /application\/ld\+json/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);

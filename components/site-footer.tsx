@@ -9,7 +9,8 @@ export function SiteFooter() {
           <div className="footer-brand">
             <Brand />
             <p>
-              A fast, focused ASL fingerspelling recognition game for iPhone.
+              A fast, fun ASL fingerspelling game for learners, signers, and
+              anyone ready to sharpen their skills.
             </p>
           </div>
 
@@ -35,7 +36,7 @@ export function SiteFooter() {
 
         <div className="footer-bottom">
           <span>© 2026 Speedy Fingers. All rights reserved.</span>
-          <span>Designed for speed. Built for learning.</span>
+          <span>Learn the letters. Catch the word. Beat your best.</span>
         </div>
       </div>
     </footer>

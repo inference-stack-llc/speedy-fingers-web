@@ -32,11 +32,11 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     metadataBase: new URL(origin),
     title: {
-      default: "Speedy Fingers — ASL Recognition at Speed",
+      default: "Speedy Fingers — The ASL Fingerspelling Game",
       template: "%s | Speedy Fingers",
     },
     description:
-      "Train ASL fingerspelling recognition with fast, focused rounds, guided practice, and a progressive journey built for iPhone.",
+      "Learn the ASL alphabet, practice names and words, and challenge your fingerspelling skills through fast rounds and progressive levels.",
     applicationName: "Speedy Fingers",
     keywords: [
       "ASL fingerspelling",
@@ -58,24 +58,24 @@ export async function generateMetadata(): Promise<Metadata> {
       type: "website",
       locale: "en_US",
       siteName: "Speedy Fingers",
-      title: "Speedy Fingers — ASL Recognition at Speed",
+      title: "Speedy Fingers — The ASL Fingerspelling Game",
       description:
-        "Train your eyes. Catch the sign. Build the streak. A fast, focused ASL fingerspelling recognition game for iPhone.",
+        "Learn the letters. Catch the word. Beat your best. A fast, fun ASL fingerspelling game for every skill level.",
       url: origin,
       images: [
         {
           url: `${origin}/og.png`,
           width: 1200,
           height: 630,
-          alt: "Speedy Fingers — Train your eyes. Catch the sign. Build the streak.",
+          alt: "Speedy Fingers ASL fingerspelling game shown beside the Speedy Fingers logo.",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Speedy Fingers — ASL Recognition at Speed",
+      title: "Speedy Fingers — The ASL Fingerspelling Game",
       description:
-        "Train your eyes. Catch the sign. Build the streak. Coming soon to iPhone.",
+        "Learn the ASL alphabet, practice words, and challenge your fingerspelling skills. Coming soon to iPhone.",
       images: [`${origin}/og.png`],
     },
     icons: {
