@@ -36,29 +36,34 @@ const features = [
 
 const screens = [
   {
-    src: "/screen-home.png",
+    src: "/screen-home.webp",
     label: "Home",
     alt: "Speedy Fingers home screen with score, accuracy, streak, practice, and Hand Lab.",
   },
   {
-    src: "/screen-journey.png",
+    src: "/screen-journey.webp",
     label: "Journey",
     alt: "Speedy Fingers journey screen with a progressive path of ASL word levels.",
   },
   {
-    src: "/screen-hand-lab.png",
+    src: "/screen-hand-lab.webp",
     label: "Hand Lab",
-    alt: "Speedy Fingers Hand Lab showing the ASL fingerspelling handshape for A.",
+    alt: "Speedy Fingers Hand Lab showing the ASL fingerspelling handshape for B.",
   },
   {
-    src: "/screen-game.png",
+    src: "/screen-recognition-round.webp",
     label: "Recognition round",
     alt: "Speedy Fingers gameplay screen asking the player to recognize a fingerspelled word.",
   },
   {
-    src: "/screen-settings.png",
+    src: "/screen-settings.webp",
     label: "Settings",
     alt: "Speedy Fingers settings for playback, feedback, motion, and contrast.",
+  },
+  {
+    src: "/screen-splash.webp",
+    label: "Launch",
+    alt: "Speedy Fingers launch screen with the game logo and nebula artwork.",
   },
 ];
 

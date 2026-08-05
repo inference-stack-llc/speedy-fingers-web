@@ -13,12 +13,11 @@ export function PhoneShot({
 }: PhoneShotProps) {
   return (
     <div className={`phone-shot ${className}`}>
-      {/* Source captures include the simulator surround; this crop isolates the device. */}
       <img
         src={src}
         alt={alt}
-        width="1250"
-        height="2394"
+        width="1600"
+        height="3000"
         loading={eager ? "eager" : "lazy"}
         fetchPriority={eager ? "high" : "auto"}
         decoding="async"
