@@ -419,20 +419,34 @@ summary {
 
 .hero-phones {
   position: relative;
-  height: min(700px, 72vw);
-  min-height: 600px;
+  display: grid;
+  min-width: 0;
+  place-items: center;
   animation: hero-phones-in 960ms 120ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 
 .phone-glow {
   position: absolute;
-  top: 24%;
-  right: 4%;
-  width: 80%;
-  height: 58%;
+  top: 18%;
+  left: 50%;
+  width: 92%;
+  height: 66%;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(35, 213, 216, 0.18), rgba(45, 92, 220, 0.1) 44%, transparent 70%);
   filter: blur(18px);
+  transform: translateX(-50%);
+}
+
+.hero-product-image {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: min(780px, 58vw);
+  max-width: none;
+  height: auto;
+  filter:
+    drop-shadow(0 32px 40px rgba(0, 0, 0, 0.42))
+    drop-shadow(0 0 30px rgba(49, 216, 207, 0.1));
 }
 
 .phone-shot {
@@ -457,71 +471,6 @@ summary {
   max-width: none;
   height: auto;
   transform: translateX(-50%);
-}
-
-.hero-phone {
-  position: absolute;
-  width: min(330px, 30vw);
-}
-
-.hero-phone--primary {
-  z-index: 2;
-  top: 4%;
-  left: 6%;
-  transform: rotate(-4deg);
-}
-
-.hero-phone--secondary {
-  z-index: 3;
-  top: 11%;
-  right: 0;
-  transform: rotate(5deg);
-}
-
-.speed-chip {
-  position: absolute;
-  z-index: 5;
-  display: grid;
-  min-width: 116px;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding: 0.68rem 0.8rem;
-  border: 1px solid var(--line);
-  border-radius: 13px;
-  background: rgba(5, 26, 46, 0.86);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.36);
-  backdrop-filter: blur(18px);
-  gap: 0.14rem 0.5rem;
-}
-
-.speed-chip > span {
-  grid-row: 1 / 3;
-  color: var(--cyan-bright);
-  font-size: 1.5rem;
-  text-shadow: 0 0 13px var(--cyan);
-}
-
-.speed-chip strong {
-  color: #8fa4ba;
-  font-size: 0.6rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-.speed-chip b {
-  font-size: 1rem;
-}
-
-.speed-chip--score {
-  bottom: 16%;
-  left: -1%;
-  animation: float 4.4s ease-in-out infinite;
-}
-
-.speed-chip--streak {
-  top: 17%;
-  right: -5%;
-  animation: float 4.4s 1.2s ease-in-out infinite;
 }
 
 .hero-orb {
@@ -1177,16 +1126,6 @@ summary {
   }
 }
 
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-9px);
-  }
-}
-
 @keyframes pulse-ring {
   0%,
   100% {
@@ -1220,12 +1159,8 @@ summary {
     font-size: clamp(3.1rem, 6vw, 4.7rem);
   }
 
-  .hero-phones {
-    min-height: 550px;
-  }
-
-  .hero-phone {
-    width: min(290px, 29vw);
+  .hero-product-image {
+    width: min(650px, 58vw);
   }
 
   .feature-grid {
@@ -1349,14 +1284,12 @@ summary {
   }
 
   .hero-phones {
-    width: min(100%, 660px);
-    height: 630px;
-    min-height: 630px;
+    width: min(100%, 760px);
     margin: 1rem auto 0;
   }
 
-  .hero-phone {
-    width: min(315px, 45vw);
+  .hero-product-image {
+    width: min(760px, 100%);
   }
 
   .feature-band {
@@ -1448,36 +1381,11 @@ summary {
   }
 
   .hero-phones {
-    height: 500px;
-    min-height: 500px;
     margin-top: 2rem;
   }
 
-  .hero-phone {
-    width: 48vw;
-  }
-
-  .hero-phone--primary {
-    left: 5%;
-  }
-
-  .hero-phone--secondary {
-    right: 3%;
-  }
-
-  .speed-chip {
-    min-width: 98px;
-    padding: 0.55rem;
-  }
-
-  .speed-chip--score {
-    bottom: 8%;
-    left: 0;
-  }
-
-  .speed-chip--streak {
-    top: 12%;
-    right: 0;
+  .hero-product-image {
+    width: min(660px, 116vw);
   }
 
   .feature-grid {

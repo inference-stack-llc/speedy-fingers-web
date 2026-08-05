@@ -134,28 +134,16 @@ export default function Home() {
 
             <div className="hero-phones" aria-label="Speedy Fingers app preview">
               <div className="phone-glow" aria-hidden="true" />
-              <PhoneShot
-                src="/screen-home.png"
-                alt="Speedy Fingers home screen on iPhone."
-                className="hero-phone hero-phone--primary"
-                eager
+              <img
+                className="hero-product-image"
+                src="/speedyfingers-homepage-hero.webp"
+                alt="Three Speedy Fingers screens showing the home dashboard, a recognition round, and Journey mode on iPhone."
+                width="1938"
+                height="1628"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
               />
-              <PhoneShot
-                src="/screen-game.png"
-                alt="A Speedy Fingers recognition round on iPhone."
-                className="hero-phone hero-phone--secondary"
-                eager
-              />
-              <div className="speed-chip speed-chip--score">
-                <span>✦</span>
-                <strong>Score</strong>
-                <b>100</b>
-              </div>
-              <div className="speed-chip speed-chip--streak">
-                <span>↯</span>
-                <strong>Streak</strong>
-                <b>8</b>
-              </div>
             </div>
           </div>
         </section>
