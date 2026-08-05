@@ -77,12 +77,6 @@ export default function Home() {
     operatingSystem: "iOS",
     description:
       "A fast, fun ASL fingerspelling game for learning the alphabet, practicing words, and challenging recognition skills.",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-      availability: "https://schema.org/PreOrder",
-    },
     featureList: [
       "Complete ASL fingerspelling alphabet in Hand Lab",
       "Name and word fingerspelling practice",
@@ -128,7 +122,7 @@ export default function Home() {
                   <span className="play-dot" aria-hidden="true">
                     ▶
                   </span>
-                  See how it plays
+                  See how to play
                 </a>
               </div>
 

@@ -35,7 +35,7 @@ export default function SupportPage() {
         <h3>When can I download the game?</h3>
         <p>
           Speedy Fingers is preparing for its first App Store release. The
-          download buttons on this site will connect directly to the official
+          App Store buttons on this site will connect directly to the official
           listing when it becomes available.
         </p>
 
