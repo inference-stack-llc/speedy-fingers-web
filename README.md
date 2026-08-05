@@ -31,3 +31,7 @@ npm run build
 npm run lint
 node --test tests/rendered-html.test.mjs
 ```
+
+The default build uses native Next.js output for Vercel. The original vinext
+workflow remains available through the `dev:sites`, `build:sites`, and
+`start:sites` scripts.
