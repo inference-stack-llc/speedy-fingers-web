@@ -275,15 +275,15 @@ export default function Home() {
             </div>
 
             <div className="growth-visual">
-              <PhoneShot
-                src="/screen-level.png"
-                alt="Speedy Fingers First Signs level details."
+              <img
+                className="growth-product-image"
+                src="/speedyfingers-practice-showcase.webp"
+                alt="Speedy Fingers Hand Lab and custom practice setup screens on two iPhones."
+                width="2048"
+                height="2732"
+                loading="lazy"
+                decoding="async"
               />
-              <div className="level-pulse" aria-hidden="true">
-                <small>LEVEL</small>
-                <strong>01</strong>
-                <span>FIRST SIGNS</span>
-              </div>
             </div>
           </div>
         </section>

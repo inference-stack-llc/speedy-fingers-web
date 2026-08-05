@@ -781,7 +781,7 @@ summary {
 .growth-visual {
   position: relative;
   display: grid;
-  min-height: 560px;
+  min-height: 620px;
   place-items: center;
 }
 
@@ -795,45 +795,18 @@ summary {
   filter: blur(12px);
 }
 
-.growth-visual .phone-shot {
+.growth-product-image {
   position: absolute;
-  top: 2rem;
-  width: 260px;
-  transform: rotate(4deg);
-}
-
-.level-pulse {
-  position: absolute;
-  z-index: 5;
-  right: -1.2rem;
-  bottom: 4.2rem;
-  display: grid;
-  width: 155px;
-  height: 155px;
-  border: 1px solid rgba(84, 245, 237, 0.5);
-  border-radius: 50%;
-  background: rgba(3, 21, 39, 0.9);
-  box-shadow:
-    0 0 0 8px rgba(49, 216, 207, 0.04),
-    0 0 48px rgba(49, 216, 207, 0.22);
-  place-content: center;
-  text-align: center;
-  animation: pulse-ring 3s ease-in-out infinite;
-}
-
-.level-pulse small,
-.level-pulse span {
-  color: var(--cyan-bright);
-  font-size: 0.55rem;
-  font-weight: 800;
-  letter-spacing: 0.15em;
-}
-
-.level-pulse strong {
-  margin: 0.16rem 0;
-  color: white;
-  font-size: 2.4rem;
-  line-height: 1;
+  z-index: 2;
+  top: -1rem;
+  right: -3rem;
+  display: block;
+  width: min(500px, 43vw);
+  max-width: none;
+  height: auto;
+  filter:
+    drop-shadow(0 30px 36px rgba(0, 0, 0, 0.4))
+    drop-shadow(0 0 24px rgba(111, 85, 218, 0.12));
 }
 
 .faq-section {
@@ -1126,20 +1099,6 @@ summary {
   }
 }
 
-@keyframes pulse-ring {
-  0%,
-  100% {
-    box-shadow:
-      0 0 0 8px rgba(49, 216, 207, 0.04),
-      0 0 42px rgba(49, 216, 207, 0.18);
-  }
-  50% {
-    box-shadow:
-      0 0 0 14px rgba(49, 216, 207, 0.015),
-      0 0 65px rgba(49, 216, 207, 0.28);
-  }
-}
-
 @media (max-width: 1050px) {
   .site-header__inner {
     gap: 1.2rem;
@@ -1176,8 +1135,9 @@ summary {
     gap: 2rem;
   }
 
-  .level-pulse {
-    right: -1rem;
+  .growth-product-image {
+    right: -3.5rem;
+    width: min(450px, 45vw);
   }
 }
 
@@ -1314,15 +1274,14 @@ summary {
   }
 
   .growth-visual {
-    min-height: 570px;
+    min-height: 700px;
   }
 
-  .growth-visual .phone-shot {
-    width: 270px;
-  }
-
-  .level-pulse {
-    right: 5%;
+  .growth-product-image {
+    top: 0;
+    right: 50%;
+    width: min(560px, 82vw);
+    transform: translateX(50%);
   }
 
   .faq-grid {
@@ -1418,18 +1377,11 @@ summary {
   }
 
   .growth-visual {
-    min-height: 500px;
+    min-height: 650px;
   }
 
-  .growth-visual .phone-shot {
-    width: min(250px, 70vw);
-  }
-
-  .level-pulse {
-    right: -0.5rem;
-    bottom: 2rem;
-    width: 132px;
-    height: 132px;
+  .growth-product-image {
+    width: min(520px, 116vw);
   }
 
   .launch-card {
