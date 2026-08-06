@@ -171,7 +171,7 @@ export default function Home() {
           <div className="site-shell">
             <div className="section-heading reveal">
               <p className="eyebrow">An essential ASL skill</p>
-              <h2>Make fingerspelling click.</h2>
+              <h2>Improve your ability to read fingerspelling.</h2>
               <p>
                 Fingerspelling is everywhere in ASL—and one of the hardest
                 skills to read at speed. Short rounds make practice feel like
@@ -228,7 +228,7 @@ export default function Home() {
             <div className="section-heading section-heading--split reveal">
               <div>
                 <p className="eyebrow">Play. Practice. Progress.</p>
-                <h2>Fingerspelling that moves.</h2>
+                <h2>A fun way to improve your sign language skills.</h2>
               </div>
               <p>
                 Learn the alphabet, spell your name, read words at speed, and
